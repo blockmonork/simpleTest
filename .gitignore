@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+.gitpod.yml
+workspace.code-workspace
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
