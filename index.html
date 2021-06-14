@@ -62,7 +62,14 @@
         <i>i = italic </i>
         <a href="#">a = anchor (link tag) </a>
 
-        <div id="javascript"></div>
+        <div id="output"></div>
+
+        <p>
+            <a href="javascript:teste()">teste (green text above)</a>
+        </p>
+
+
+        
 
     </div>
 
@@ -72,10 +79,13 @@
 (function(){
     var txt = '';
     for ( var i = 1; i < 11; i++ ){
-        txt += ' e linha '+i+'<br>';
+        txt += ' e linha '+i+' / ';
     }
-    $('#javascript').html('javascript text!!!' + txt);
+    $('#output').html('javascript text!!!' + txt);
 })();
+function teste(){
+    $('#output').html('teste ok!').css({'color':'green'})
+}
 </script>
 
 
